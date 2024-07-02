@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #191e24;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 20px 50px;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .navbar.nav .show {
+    top: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    transition: .3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: aqua;
+}
+
+@media screen and (max-width: 768px) {
+    .toggel-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        cursor: pointer;
+        margin-right: -10px;
+    }
+
+    .toggel-menu span {
+        display: block;
+        background-color: white;
+        height: 2px;
+        width: 35px;
+    }
+
+    .navbar {
+        position: relative;
+        padding: 20px;
+    }
+
+    .navbar .navbar-nav {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -300px;
+        right: 0;
+        background: #191e24;
+        padding: 35px 0;
+    }
+}
